@@ -22,14 +22,20 @@
 - [Platforms](#platforms)
 - [Tools and Software](#tools--software)
     - [Infrastructure as Code](#infrastructure-as-code)
+    - [Multi-cloud Management](#multi-cloud-management)
     - [Containerization](#containerization)
         - [Container Engines](#container-engines)
         - [Orchestration](#orchestration)
         - [Management Tools](#management-tools)
+    - [Serverless Frameworks](#serverless-frameworks)
+    - [Cloud Migration Tools](#cloud-migration-tools)
+    - [Disaster Recovery](#disaster-recovery)
+    - [FinOps & Cost Management](#finops--cost-management)
+    - [Edge Computing](#edge-computing)
     - [Monitoring](#monitoring)
     - [Logging](#logging)
 - [Best Practices](#best-practices)
-    - [Cost Optimazation](#cost-optimazion)
+    - [Cost Optimization](#cost-optimization)
     - [Scalability and Performances](#scalability-and-performances)
 - [Security](#security)
     - [Identity & Access Management (IAM)](#identity--access-management-iam)
@@ -40,6 +46,17 @@
     - [Community](#community)
     - [Conferences](#conferences)
 - [Emerging Trends](#emerging-trends)
+    - [Serverless Computing](#serverless-computing)
+    - [Multi-cloud Strategy](#multi-cloud-strategy)
+    - [Edge Computing](#edge-computing)
+    - [Artificial Intelligence Integration](#artificial-intelligence-integration)
+    - [Cloud-Native Security](#cloud-native-security)
+    - [Quantum Computing](#quantum-computing)
+    - [Generative AI & Large Language Models](#generative-ai--large-language-models)
+    - [Platform Engineering & Developer Experience](#platform-engineering--developer-experience)
+    - [Sustainable Cloud Computing](#sustainable-cloud-computing)
+    - [WebAssembly (WASM) in Cloud](#webassembly-wasm-in-cloud)
+    - [Cloud-Native Databases](#cloud-native-databases)
 - [Contributing](#contributing)
 
 ### Learning Resources
@@ -143,6 +160,18 @@
 | Terraform | IAC tool to provision and manage resources in any cloud or data center. | [Terraform Documentation](https://developer.hashicorp.com/terraform/docs) |
 | OpenTofu | A community-driven open source fork of Terraform, fully compatible with existing Terraform configurations and providers. | [OpenTofu Documentation](https://opentofu.org/docs) |
 
+#### **Multi-cloud Management**
+
+> Tools and platforms for managing resources across multiple cloud providers, enabling unified operations and governance.
+
+| Name | Description | Official Documentation |
+|------|-------------|------|
+| Terraform Cloud | HashiCorp's managed service for Terraform with collaboration features, policy enforcement, and remote state management. | [Terraform Cloud](https://cloud.hashicorp.com/products/terraform) |
+| Pulumi Cloud | Managed service for Pulumi with team collaboration, policy as code, and advanced deployment features. | [Pulumi Cloud](https://www.pulumi.com/product/pulumi-cloud/) |
+| Crossplane | Open source Kubernetes add-on that enables platform teams to assemble infrastructure from multiple vendors. | [Crossplane](https://crossplane.io/) |
+| Scalr | Enterprise-grade Infrastructure as Code management platform with policy enforcement and cost controls. | [Scalr](https://scalr.com/) |
+| env0 | GitOps-driven Infrastructure as Code automation platform for Terraform, Terragrunt, and other IaC tools. | [env0](https://www.env0.com/) |
+
 #### **Containerization**
 
 > Is a technology that enables the packaging of applications and their dependencies into isolated containers, facilitating consistent deployment across different environments.
@@ -179,6 +208,74 @@
 | Portainer | A container management software. | [Portainer](https://www.portainer.io/) |
 | Rancher | A complete software stack for teams deploying containers, particularly Kubernetes clusters. | [Rancher](https://rancher.com/) |
 
+#### **Serverless Frameworks**
+
+> Frameworks and tools for building, deploying, and managing serverless applications across different cloud providers.
+
+| Name | Description | Link |
+|------|-------------|------|
+| Serverless Framework | Build and deploy serverless applications on AWS, Azure, Google Cloud, and more with zero infrastructure management. | [Serverless Framework](https://www.serverless.com/) |
+| AWS SAM | AWS Serverless Application Model for building serverless applications on AWS with simplified syntax. | [AWS SAM](https://aws.amazon.com/serverless/sam/) |
+| Azure Functions Core Tools | Command-line tools for developing and testing Azure Functions locally. | [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local) |
+| Google Cloud Functions Framework | FaaS framework for writing portable Node.js, Python, Go, Java, and .NET functions. | [Functions Framework](https://cloud.google.com/functions/docs/functions-framework) |
+| Zappa | Serverless Python web applications on AWS Lambda and API Gateway. | [Zappa](https://github.com/zappa/Zappa) |
+| Chalice | Framework for deploying serverless Python applications on AWS. | [Chalice](https://chalice.readthedocs.io/) |
+
+#### **Cloud Migration Tools**
+
+> Tools and services designed to help migrate applications, data, and workloads from on-premises to cloud or between cloud providers.
+
+| Name | Description | Link |
+|------|-------------|------|
+| AWS Migration Hub | Centralized location to track the progress of application migrations across multiple AWS and partner solutions. | [AWS Migration Hub](https://aws.amazon.com/migration-hub/) |
+| Azure Migrate | Unified migration platform to assess, migrate, and optimize on-premises servers, databases, and applications. | [Azure Migrate](https://azure.microsoft.com/en-us/products/azure-migrate/) |
+| Google Cloud Migration Center | Unified platform for migration assessment, planning, and execution to Google Cloud. | [Migration Center](https://cloud.google.com/migration-center) |
+| CloudEndure | Disaster recovery and live migration solution for physical, virtual, and cloud-based servers. | [CloudEndure](https://www.cloudendure.com/) |
+| Carbonite Migrate | Real-time replication solution for migrating physical, virtual, and cloud workloads. | [Carbonite Migrate](https://www.carbonite.com/data-protection/migrate/) |
+| Velostrata | Google Cloud's migration technology for lift-and-shift migrations (now part of Google Cloud Migrate). | [Migrate for Compute Engine](https://cloud.google.com/migrate/compute-engine) |
+
+#### **Disaster Recovery**
+
+> Solutions and tools for backup, disaster recovery, and business continuity in cloud environments.
+
+| Name | Description | Link |
+|------|-------------|------|
+| AWS Backup | Centralized backup service to protect AWS services and hybrid workloads. | [AWS Backup](https://aws.amazon.com/backup/) |
+| Azure Site Recovery | Disaster recovery as a service for replicating workloads from primary to secondary location. | [Azure Site Recovery](https://azure.microsoft.com/en-us/products/site-recovery/) |
+| Google Cloud Backup and DR | Centralized backup and disaster recovery service for Google Cloud and hybrid environments. | [Backup and DR](https://cloud.google.com/backup-disaster-recovery) |
+| Veeam Backup & Replication | Enterprise backup solution with cloud integration for hybrid environments. | [Veeam](https://www.veeam.com/backup-replication.html) |
+| Commvault | Enterprise data protection platform with cloud backup and disaster recovery capabilities. | [Commvault](https://www.commvault.com/) |
+| Rubrik | Cloud data management platform for backup, recovery, and data archival. | [Rubrik](https://www.rubrik.com/) |
+
+#### **FinOps & Cost Management**
+
+> Tools and platforms for cloud financial operations, cost optimization, and spend management across cloud providers.
+
+| Name | Description | Link |
+|------|-------------|------|
+| AWS Cost Explorer | Native AWS tool for visualizing, understanding, and managing AWS costs and usage. | [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) |
+| Azure Cost Management | Microsoft's native cost management and billing service for Azure resources. | [Azure Cost Management](https://azure.microsoft.com/en-us/products/cost-management/) |
+| Google Cloud Cost Management | Native Google Cloud tools for cost visibility, budgets, and optimization recommendations. | [Cloud Cost Management](https://cloud.google.com/cost-management) |
+| CloudHealth by VMware | Multi-cloud cost management and optimization platform with governance and security features. | [CloudHealth](https://www.cloudhealthtech.com/) |
+| Cloudability by Apptio | FinOps platform for cloud cost management, optimization, and financial accountability. | [Cloudability](https://www.apptio.com/products/cloudability/) |
+| ParkMyCloud | Automated cloud cost optimization through scheduling and rightsizing of cloud resources. | [ParkMyCloud](https://www.parkmycloud.com/) |
+| Spot by NetApp | Cloud cost optimization platform with automated scaling and workload management. | [Spot by NetApp](https://spot.io/) |
+
+#### **Edge Computing**
+
+> Platforms and tools for deploying and managing applications at the network edge, closer to end users and data sources.
+
+| Name | Description | Link |
+|------|-------------|------|
+| AWS Wavelength | 5G edge computing service that brings AWS services to the edge of telecommunications networks. | [AWS Wavelength](https://aws.amazon.com/wavelength/) |
+| AWS Local Zones | Infrastructure deployments that place AWS compute, storage, and database services closer to end users. | [AWS Local Zones](https://aws.amazon.com/about-aws/global-infrastructure/localzones/) |
+| Azure Edge Zones | Microsoft's edge computing solution bringing Azure services closer to users and devices. | [Azure Edge Zones](https://azure.microsoft.com/en-us/products/edge-zones/) |
+| Google Distributed Cloud Edge | Google Cloud infrastructure deployed at the edge for low-latency applications. | [Distributed Cloud Edge](https://cloud.google.com/distributed-cloud/edge) |
+| AWS IoT Greengrass | Edge computing service for IoT devices to run AWS Lambda functions locally. | [AWS IoT Greengrass](https://aws.amazon.com/greengrass/) |
+| Azure IoT Edge | Service that deploys cloud workloads to run on Internet of Things edge devices. | [Azure IoT Edge](https://azure.microsoft.com/en-us/products/iot-edge/) |
+| K3s | Lightweight Kubernetes distribution designed for edge computing and resource-constrained environments. | [K3s](https://k3s.io/) |
+| OpenYurt | Kubernetes-based platform for edge computing scenarios with cloud-native approach. | [OpenYurt](https://openyurt.io/) |
+
 #### **Monitoring**
 
 > Collections of tools or software used to monitor your cloud services.
@@ -200,14 +297,14 @@
 
 ### Best Practices
 
-> Best Practices encompass established guidelines and strategies that help optimize cloud resource, enhance performance, and ensure security and compliance in cloud environments.Google Cloud Cost Optimization
+> Best Practices encompass established guidelines and strategies that help optimize cloud resources, enhance performance, and ensure security and compliance in cloud environments.
 
 #### **Cost Optimization**
 
 | Name | Description | Link |
 |------|-------------|------|
 | AWS Cost Optimization | Best practices for optimizing your AWS costs using AWS-native tools. | [Cost Optimization with AWS](https://aws.amazon.com/aws-cost-management/cost-optimization/) |
-| Google Cloud Cost Optimization | Ttips to optimize your Google Cloud spend. | [Well-Architected Framework: Cost optimization pillar](https://cloud.google.com/architecture/framework/cost-optimization) |
+| Google Cloud Cost Optimization | Tips to optimize your Google Cloud spend. | [Well-Architected Framework: Cost optimization pillar](https://cloud.google.com/architecture/framework/cost-optimization) |
 | OpenStack Cost Optimization | Guide for optimizing OpenStack costs. | [7 Best Practices for Optimizing OpenStack Costs](https://superuser.openinfra.dev/articles/7-best-practices-for-optimizing-openstack-costs/) |
 
 #### **Scalability and Performance**
@@ -261,27 +358,133 @@
 
 #### **Community**
 
-- [AWS Community BUilder](https://aws.amazon.com/developer/community/community-builders/) - Program offers technical resources, education, and networking opportunities to AWS technical enthusiasts and emerging thought leaders who are passionate about sharing knowledge and connecting with the technical community.
-- [Google Cloud Community](https://cloud.google.com/communities) - Meet industry peers, ask questions, collaborate to find answers, and connect with Googlers who are making the products you use every day.
-- [DevOps Exchange](https://www.devops-exchange.io/) - Global community that ignites the passion for DevOps.
-- [OpenStack](https://www.openstack.org/community/) - The Community Team helps developers and users of OpenStack find information relevant for them. The group is made by staff of the OpenStack Foundation and volunteers around the world.
+| Name | Description | Link |
+|------|-------------|------|
+| AWS Community Builder | Program offers technical resources, education, and networking opportunities to AWS technical enthusiasts and emerging thought leaders who are passionate about sharing knowledge and connecting with the technical community. | [AWS Community Builder](https://aws.amazon.com/developer/community/community-builders/) |
+| Google Cloud Community | Meet industry peers, ask questions, collaborate to find answers, and connect with Googlers who are making the products you use every day. | [Google Cloud Community](https://cloud.google.com/communities) |
+| DevOps Exchange | Global community that ignites the passion for DevOps. | [DevOps Exchange](https://www.devops-exchange.io/) |
+| OpenStack Community | The Community Team helps developers and users of OpenStack find information relevant for them. The group is made by staff of the OpenStack Foundation and volunteers around the world. | [OpenStack Community](https://www.openstack.org/community/) |
+| CNCF Community | Cloud Native Computing Foundation community fostering collaboration on cloud-native technologies. | [CNCF Community](https://www.cncf.io/community/) |
+| HashiCorp User Groups | Local meetups and user groups for HashiCorp tools like Terraform, Vault, and Consul. | [HashiCorp User Groups](https://www.hashicorp.com/community) |
+| Kubernetes Community | Global community of contributors, users, and advocates for Kubernetes. | [Kubernetes Community](https://kubernetes.io/community/) |
 
 #### **Conferences**
 
-- [AWS re:Invent](https://reinvent.awsevents.com/) - Is a learning conference hosted by AWS for the global cloud-computing community.
-- [AWS Community Day](https://aws.amazon.com/events/community-day) - AWS Community Day events are community-led conferences where event logistics and content is planned, sourced, and delivered by community leaders. They feature technical discussions, workshops, and hands-on labs led by expert AWS users and industry leaders from around the world. Community Day events deliver a peer-to-peer learning experience, providing developers with a venue for them to acquire AWS knowledge in their preferred way: from one another. In many ways they are events put on "by the community, for the community."
-- [Microsoft Ignite](https://ignite.microsoft.com/en-US/home) - Is an annual conference for developers, IT professionals and partners, hosted by Microsoft.
-- [OpenInfra](https://openinfra.dev/summit/) - a global collaboration of 110,000 people across 187 countries, builds and operates infrastructure powered by open source software (likes Linux, OpenStack, etc).
+| Name | Description | Link |
+|------|-------------|------|
+| AWS re:Invent | Learning conference hosted by AWS for the global cloud-computing community with keynotes, sessions, and hands-on labs. | [AWS re:Invent](https://reinvent.awsevents.com/) |
+| AWS Community Day | Community-led conferences where event logistics and content is planned, sourced, and delivered by community leaders. They feature technical discussions, workshops, and hands-on labs led by expert AWS users and industry leaders from around the world. | [AWS Community Day](https://aws.amazon.com/events/community-day) |
+| Microsoft Ignite | Annual conference for developers, IT professionals and partners, hosted by Microsoft with latest product announcements and technical sessions. | [Microsoft Ignite](https://ignite.microsoft.com/en-US/home) |
+| OpenInfra Summit | Global collaboration of 110,000 people across 187 countries, builds and operates infrastructure powered by open source software like Linux, OpenStack, and Kubernetes. | [OpenInfra Summit](https://openinfra.dev/summit/) |
+| KubeCon + CloudNativeCon | Premier conferences for developers, end users, and vendors to gather and further the education and advancement of cloud native computing. | [KubeCon + CloudNativeCon](https://www.cncf.io/kubecon-cloudnativecon-events/) |
+| Google Cloud Next | Google's annual cloud conference featuring product announcements, technical sessions, and networking opportunities. | [Google Cloud Next](https://cloud.google.com/next) |
+| Microsoft Build | Annual conference for software developers hosted by Microsoft, focusing on software development for Microsoft platforms. | [Microsoft Build](https://mybuild.microsoft.com/) |
+| DockerCon | Annual conference for the Docker community featuring container technology, best practices, and ecosystem updates. | [DockerCon](https://www.docker.com/dockercon/) |
 
-#### **Emerging Trends**
+### Emerging Trends
 
-> As cloud computing continues to evolve, new trends are shaping the future of how businesses and organizations leverage cloud technologies. Here are some key trends to watch:
+> As cloud computing continues to evolve, new trends are shaping the future of how businesses and organizations leverage cloud technologies. Here are some key trends and technologies to watch:
 
-- [Serverless Computing](https://aws.amazon.com/serverless/) - Allows you to build and run applications and services without thinking about servers.
-- [Multicloud Strategy](https://cloud.google.com/learn/what-is-multicloud?hl=en) - Multicloud is when an organization uses cloud computing services from at least two cloud providers to run their applications.
-- [Edge Computing](https://aws.amazon.com/what-is/edge-computing/) - Is the process of bringing information storage and computing abilities closer to the devices that produce that information and the users who consume it.
-- [Artificial Intelligence (AI) Integration](https://aws.amazon.com/ai/services/) - AI and machine learning are increasingly integrated into cloud services, allowing for smarter data analysis and automation of business processes.
-- [Cloud-Native Security (Shift-Left Security)](https://www.paloaltonetworks.com/blog/cloud-security/shift-left-code-cloud-integration) - Integrating security early in the development lifecycle, ensuring applications are secure from the start. Tools like AWS Security Hub and Open Policy Agent (OPA) are key players.
+#### **Serverless Computing**
+
+| Name | Description | Link |
+|------|-------------|------|
+| AWS Lambda | Run code without provisioning or managing servers, paying only for compute time consumed. | [AWS Lambda](https://aws.amazon.com/lambda/) |
+| Azure Functions | Event-driven serverless compute platform that can solve complex orchestration problems. | [Azure Functions](https://azure.microsoft.com/en-us/products/functions/) |
+| Google Cloud Functions | Lightweight compute solution for creating single-purpose, stand-alone functions. | [Cloud Functions](https://cloud.google.com/functions) |
+| Serverless Computing Overview | Comprehensive guide to serverless computing concepts and benefits. | [AWS Serverless](https://aws.amazon.com/serverless/) |
+
+#### **Multi-cloud Strategy**
+
+| Name | Description | Link |
+|------|-------------|------|
+| Multi-cloud Strategy Guide | Best practices for implementing multi-cloud architectures and avoiding vendor lock-in. | [Google Cloud Multi-cloud](https://cloud.google.com/learn/what-is-multicloud?hl=en) |
+| Anthos | Google's hybrid and multi-cloud platform for consistent development and operations. | [Google Anthos](https://cloud.google.com/anthos) |
+| Azure Arc | Extend Azure services and management to any infrastructure across on-premises, multi-cloud, and edge. | [Azure Arc](https://azure.microsoft.com/en-us/products/azure-arc/) |
+| AWS Outposts | Fully managed service that extends AWS infrastructure to virtually any on-premises facility. | [AWS Outposts](https://aws.amazon.com/outposts/) |
+
+#### **Edge Computing**
+
+| Name | Description | Link |
+|------|-------------|------|
+| Edge Computing Overview | Understanding edge computing and its applications in modern architectures. | [AWS Edge Computing](https://aws.amazon.com/what-is/edge-computing/) |
+| AWS Wavelength | 5G edge computing service bringing AWS services to telecommunications networks. | [AWS Wavelength](https://aws.amazon.com/wavelength/) |
+| Azure Edge Zones | Microsoft's edge computing solution for ultra-low latency applications. | [Azure Edge Zones](https://azure.microsoft.com/en-us/products/edge-zones/) |
+| Google Distributed Cloud | Google's edge and hybrid cloud solutions for distributed computing needs. | [Distributed Cloud](https://cloud.google.com/distributed-cloud) |
+
+#### **Artificial Intelligence Integration**
+
+| Name | Description | Link |
+|------|-------------|------|
+| AWS AI Services | Comprehensive suite of AI and machine learning services for developers. | [AWS AI Services](https://aws.amazon.com/ai/services/) |
+| Azure AI Platform | Microsoft's AI and machine learning platform with pre-built and custom solutions. | [Azure AI](https://azure.microsoft.com/en-us/solutions/ai/) |
+| Google Cloud AI | AI and machine learning products for building intelligent applications. | [Google Cloud AI](https://cloud.google.com/ai) |
+| MLOps Platforms | Platforms for managing machine learning operations and model lifecycle. | [AWS SageMaker](https://aws.amazon.com/sagemaker/) |
+
+#### **Cloud-Native Security**
+
+| Name | Description | Link |
+|------|-------------|------|
+| Shift-Left Security | Integrating security early in the development lifecycle for cloud-native applications. | [Shift-Left Security](https://www.paloaltonetworks.com/blog/cloud-security/shift-left-code-cloud-integration) |
+| AWS Security Hub | Centralized security findings aggregator for comprehensive security posture management. | [AWS Security Hub](https://aws.amazon.com/security-hub/) |
+| Open Policy Agent | Policy-as-code framework for cloud-native environments and Kubernetes. | [Open Policy Agent](https://www.openpolicyagent.org/) |
+| Falco | Runtime security monitoring for cloud-native environments and containers. | [Falco](https://falco.org/) |
+
+#### **Quantum Computing**
+
+| Name | Description | Link |
+|------|-------------|------|
+| AWS Braket | Fully managed quantum computing service for exploring and experimenting with quantum algorithms. | [AWS Braket](https://aws.amazon.com/braket/) |
+| Azure Quantum | Microsoft's cloud quantum computing service with access to diverse quantum hardware. | [Azure Quantum](https://azure.microsoft.com/en-us/products/quantum/) |
+| Google Quantum AI | Google's quantum computing research and cloud access to quantum processors. | [Google Quantum AI](https://quantumai.google/) |
+| IBM Quantum Network | Access to IBM's quantum computers and quantum computing resources. | [IBM Quantum](https://quantum-computing.ibm.com/) |
+
+#### **Generative AI & Large Language Models**
+
+| Name | Description | Link |
+|------|-------------|------|
+| Amazon Bedrock | Fully managed service for building generative AI applications with foundation models from leading AI companies. | [Amazon Bedrock](https://aws.amazon.com/bedrock/) |
+| Azure OpenAI Service | Microsoft's cloud service providing access to OpenAI's powerful language models including GPT-4 and ChatGPT. | [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service/) |
+| Google Vertex AI | Unified ML platform with generative AI capabilities and access to foundation models like PaLM and Gemini. | [Vertex AI](https://cloud.google.com/vertex-ai) |
+| Anthropic Claude | AI assistant with constitutional AI training, available through various cloud platforms. | [Anthropic Claude](https://www.anthropic.com/claude) |
+| Hugging Face Hub | Platform for sharing and deploying machine learning models, including large language models. | [Hugging Face](https://huggingface.co/) |
+| LangChain | Framework for developing applications powered by language models with cloud integrations. | [LangChain](https://langchain.com/) |
+
+#### **Platform Engineering & Developer Experience**
+
+| Name | Description | Link |
+|------|-------------|------|
+| Backstage | Open platform for building developer portals and improving developer experience. | [Backstage](https://backstage.io/) |
+| GitOps | Operational framework using Git repositories as the single source of truth for declarative infrastructure and applications. | [GitOps](https://www.gitops.tech/) |
+| Internal Developer Platforms | Platforms that provide self-service capabilities for developers to deploy and manage applications. | [Platform Engineering](https://platformengineering.org/) |
+| Crossplane | Kubernetes add-on that enables platform teams to assemble infrastructure from multiple vendors. | [Crossplane](https://crossplane.io/) |
+
+#### **Sustainable Cloud Computing**
+
+| Name | Description | Link |
+|------|-------------|------|
+| AWS Sustainability | Tools and services for measuring and reducing carbon footprint in AWS cloud infrastructure. | [AWS Sustainability](https://sustainability.aboutamazon.com/environment/the-cloud) |
+| Azure Sustainability | Microsoft's commitment to carbon negative cloud computing and sustainability tools. | [Azure Sustainability](https://azure.microsoft.com/en-us/global-infrastructure/sustainability/) |
+| Google Cloud Carbon Footprint | Tools for tracking and reducing carbon emissions from Google Cloud usage. | [Carbon Footprint](https://cloud.google.com/carbon-footprint) |
+| Green Software Foundation | Industry coalition focused on building a trusted ecosystem of people, standards, tooling and best practices for green software. | [Green Software Foundation](https://greensoftware.foundation/) |
+
+#### **WebAssembly (WASM) in Cloud**
+
+| Name | Description | Link |
+|------|-------------|------|
+| Wasmtime | Runtime for WebAssembly that can be used in cloud environments for secure, fast execution. | [Wasmtime](https://wasmtime.dev/) |
+| WASI | WebAssembly System Interface for running WASM outside the browser, including cloud environments. | [WASI](https://wasi.dev/) |
+| Fermyon Cloud | Cloud platform specifically designed for WebAssembly applications and microservices. | [Fermyon](https://www.fermyon.com/) |
+| Krustlet | Kubernetes kubelet implementation for running WebAssembly workloads. | [Krustlet](https://krustlet.dev/) |
+
+#### **Cloud-Native Databases**
+
+| Name | Description | Link |
+|------|-------------|------|
+| PlanetScale | Serverless MySQL platform built on Vitess with branching capabilities like Git. | [PlanetScale](https://planetscale.com/) |
+| Neon | Serverless PostgreSQL with automatic scaling, branching, and point-in-time recovery. | [Neon](https://neon.tech/) |
+| Supabase | Open source Firebase alternative with PostgreSQL, real-time subscriptions, and edge functions. | [Supabase](https://supabase.com/) |
+| CockroachDB | Distributed SQL database designed for cloud-native applications with global consistency. | [CockroachDB](https://www.cockroachlabs.com/) |
 
 ## Contributing
 
