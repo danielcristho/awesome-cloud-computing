@@ -17,12 +17,9 @@
 
 This comprehensive collection serves as a centralized knowledge base for developers, engineers, and organizations looking to learn about or improve their cloud computing expertise.
 
-- **Curate** high-quality cloud computing resources across multiple categories
-- **Provide** learning paths from basic concepts to advanced practices
+- **Curate** Cloud computing resources across multiple categories
 - **Maintain** an organized reference for cloud platforms, tools, and best practices
 - **Support** the cloud computing community with vetted, useful resources
-
-
 
 ## Quick Start
 
@@ -37,7 +34,7 @@ Your contributions are always welcome! Please read our [Contributing Guidelines]
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/yourusername/awesome-cloud-computing/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/danielcristho/awesome-cloud-computing/blob/main/LICENSE).
 
 ---
 

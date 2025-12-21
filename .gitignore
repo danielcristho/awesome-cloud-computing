@@ -1,0 +1,10 @@
+# Kiro IDE
+.kiro/
+.vscode/
+
+# Python Environment
+
+env/
+.env/
+venv/
+.venv/
