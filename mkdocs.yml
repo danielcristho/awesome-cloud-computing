@@ -1,0 +1,145 @@
+# Reference: https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml
+
+# Project information
+
+site_name: Awesome Cloud Computing
+site_description: >- 
+  A curated list of cloud computing resources, tools, platforms, and learning materials.
+site_url: https://danielcristho.github.io/awesome-cloud-computing
+site_author: Daniel Cristho
+
+# Repository
+repo_name: danielcristho/awesome-cloud-computing
+repo_url: https://github.com/danielcristho/awesome-cloud-computing
+edit_uri: edit/main/docs/
+
+# Configuration
+theme:
+  name: material
+  language: en
+  logo: assets/awesome-logo.svg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+# Navigation
+nav:
+  - Home: index.md
+  - Learning Resources:
+    - Overview: learning/index.md
+    - Basic Concepts: learning/basic-concepts.md
+    - Books: learning/books.md
+    - Tutorials: learning/tutorials.md
+    - Certifications: learning/certifications.md
+  - Platforms: platforms.md
+  - Tools & Software:
+    - Overview: tools/index.md
+    - Infrastructure as Code: tools/infrastructure-as-code.md
+    - Multi-cloud Management: tools/multi-cloud-management.md
+    - Containerization: tools/containerization.md
+    - Serverless Frameworks: tools/serverless-frameworks.md
+    - Cloud Migration: tools/cloud-migration.md
+    - Disaster Recovery: tools/disaster-recovery.md
+    - FinOps & Cost Management: tools/finops-cost-management.md
+    - Edge Computing: tools/edge-computing.md
+    - Monitoring: tools/monitoring.md
+    - Logging: tools/logging.md
+  - Best Practices:
+    - Overview: best-practices/index.md
+    - Cost Optimization: best-practices/cost-optimization.md
+    - Scalability & Performance: best-practices/scalability-performance.md
+  - Security:
+    - Overview: security/index.md
+    - Identity & Access Management: security/iam.md
+    - Threat Detection: security/threat-detection.md
+    - Secret Management: security/secret-management.md
+    - Compliance & Governance: security/compliance-governance.md
+  - Community:
+    - Overview: community/index.md
+    - Communities: community/communities.md
+    - Conferences: community/conferences.md
+  - Emerging Trends:
+    - Overview: trends/index.md
+    - Serverless Computing: trends/serverless.md
+    - Multi-cloud Strategy: trends/multi-cloud.md
+    - Edge Computing: trends/edge-computing.md
+    - AI Integration: trends/ai-integration.md
+    - Cloud-Native Security: trends/cloud-native-security.md
+    - Quantum Computing: trends/quantum-computing.md
+    - Generative AI & LLMs: trends/generative-ai.md
+    - Platform Engineering: trends/platform-engineering.md
+    - Sustainable Computing: trends/sustainable-computing.md
+    - WebAssembly: trends/webassembly.md
+    - Cloud-Native Databases: trends/cloud-native-databases.md
+  - Contributing: contributing.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/danielcristho
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/chrstdan
+  # analytics:
+  #   provider: google
+  #   property: !ENV GOOGLE_ANALYTICS_KEY
+
+# Copyright
+copyright: Copyright &copy; 2024-Present - Licensed under MIT License
