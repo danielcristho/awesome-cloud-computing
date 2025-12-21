@@ -17,7 +17,7 @@ New to cloud computing? Begin your journey here:
 
 1. **Understand the Basics** - Read through [basic concepts](basic-concepts.md)
 2. **Get Hands-On** - Try free tutorials from major providers
-3. **Join Communities** - Connect with other learners in our [community section](../community/)
+3. **Join Communities** - Connect with other learners in our [community section](../community/index.md)
 4. **Practice Regularly** - Use free tiers from cloud providers to experiment
 
 ---
