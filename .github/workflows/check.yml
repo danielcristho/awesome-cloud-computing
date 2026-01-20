@@ -1,87 +1,16 @@
-name: Docs Quality Check
-
+name: pre-commit
 on:
   push:
-    branches: [main, develop]
+    branches: ["main"]
   pull_request:
-    branches: [main, develop]
+    branches: ["main"]
 
 jobs:
-  markdown-lint:
-    name: Markdown Lint
+  pre-commit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install markdownlint
-        run: npm install -g markdownlint-cli
-
-      - name: Run markdownlint
-        run: markdownlint README.md docs/**/*.md --ignore docs/assets
-
-  awesome-lint:
-    name: Awesome Lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Run awesome-lint
-        run: npx awesome-lint
-
-  mkdocs-build:
-    name: MkDocs Build Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: |
-          pip install -e .
-
-      - name: Build MkDocs
-        run: mkdocs build --strict
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: mkdocs-site
-          path: site/
-          retention-days: 7
-
-  language-config-check:
-    name: Language Configuration Check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install pyyaml
-
-      - name: Validate languages.yml
-        run: python -c "import yaml; yaml.safe_load(open('docs/languages.yml'))"
-
-      - name: Check language folders exist
-        run: |
-          for locale in $(python -c "import yaml; config = yaml.safe_load(open('docs/languages.yml')); print(' '.join([lang['locale'] for lang in config['languages']]))"); do
-            if [ ! -d "docs/$locale" ]; then
-              echo "Error: Language folder docs/$locale does not exist"
-              exit 1
-            fi
-            echo "✓ Language folder docs/$locale exists"
-          done
+          python-version: "3.13"
+      - uses: pre-commit/action@v3.0.0
