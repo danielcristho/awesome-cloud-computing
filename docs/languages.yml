@@ -1,0 +1,84 @@
+# Add new languages here then run: just sync-langs
+
+languages:
+  - locale: en
+    name: English
+    default: true
+    build: true
+    nav_translations:
+      Home: Home
+      Learning Resources: Learning Resources
+      Overview: Overview
+      Basic Concepts: Basic Concepts
+      Books: Books
+      Tutorials: Tutorials
+      Certifications: Certifications
+      Platforms: Platforms
+      Tools & Software: Tools & Software
+      Infrastructure as Code: Infrastructure as Code
+      Multi-cloud Management: Multi-cloud Management
+      Containerization: Containerization
+      Serverless Frameworks: Serverless Frameworks
+      Cloud Migration: Cloud Migration
+      Disaster Recovery: Disaster Recovery
+      FinOps & Cost Management: FinOps & Cost Management
+      Edge Computing: Edge Computing
+      Monitoring: Monitoring
+      Logging: Logging
+      Best Practices: Best Practices
+      Cost Optimization: Cost Optimization
+      Scalability & Performance: Scalability & Performance
+      Security: Security
+      Identity & Access Management: Identity & Access Management
+      Threat Detection: Threat Detection
+      Secret Management: Secret Management
+      Compliance & Governance: Compliance & Governance
+      Community: Community
+      Emerging Trends: Emerging Trends
+      Contributing: Contributing
+
+  - locale: id
+    name: Bahasa Indonesia
+    default: false
+    build: true
+    nav_translations:
+      Home: Beranda
+      Learning Resources: Sumber Belajar
+      Overview: Ringkasan
+      Basic Concepts: Konsep Dasar
+      Books: Buku
+      Tutorials: Tutorial
+      Certifications: Sertifikasi
+      Platforms: Platform
+      Tools & Software: Alat & Perangkat Lunak
+      Infrastructure as Code: Infrastructure as Code
+      Multi-cloud Management: Manajemen Multi-cloud
+      Containerization: Kontainerisasi
+      Serverless Frameworks: Framework Serverless
+      Cloud Migration: Migrasi Cloud
+      Disaster Recovery: Pemulihan Bencana
+      FinOps & Cost Management: FinOps & Manajemen Biaya
+      Edge Computing: Edge Computing
+      Monitoring: Monitoring
+      Logging: Logging
+      Best Practices: Praktik Terbaik
+      Cost Optimization: Optimasi Biaya
+      Scalability & Performance: Skalabilitas & Performa
+      Security: Keamanan
+      Identity & Access Management: Manajemen Identitas & Akses
+      Threat Detection: Deteksi Ancaman
+      Secret Management: Manajemen Secret
+      Compliance & Governance: Kepatuhan & Tata Kelola
+      Community: Komunitas
+      Emerging Trends: Tren Terkini
+      Contributing: Berkontribusi
+# Example: Add Spanish
+#  - locale: es
+#    name: Español
+#    default: false
+#    build: true
+#    nav_translations:
+#      Home: Inicio
+#      Learning Resources: Recursos de Aprendizaje
+#      Overview: Resumen
+#      # ... add more translations
