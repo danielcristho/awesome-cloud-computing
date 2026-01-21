@@ -16,7 +16,7 @@
   </p>
 
   <p>
-    <a href="https://awesome-cloud.com"><strong>Browse via Website</strong></a>
+    <a href="https://awesome-clouds.com"><strong>Browse via Website</strong></a>
   </p>
 </div>
 
