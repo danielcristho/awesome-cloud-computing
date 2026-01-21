@@ -27,12 +27,12 @@
 This repository provides a structured list of cloud computing resources, including platforms, tools, architectures, etc.
 
 For easier navigation and search, the content is also available on
-👉 **[awesome-cloud.com](https://awesome-clouds.com)**
+👉 **[awesome-clouds.com](https://awesome-clouds.com)**
 
 **You can also find this guide in these languages:**
 
-- [English](/)
-- [Bahasa Indonesia](/id/)
+- [English](https://awesome-clouds.com/)
+- [Bahasa Indonesia](https://awesome-clouds.com/id/)
 
 Big thanks to all contributors. Contributions for additional languages are welcome.
 

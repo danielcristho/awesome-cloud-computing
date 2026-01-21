@@ -1,0 +1,45 @@
+<!--Social media (often blocks automated requests)<!-->
+https://www.linkedin.com
+https://linkedin.com
+https://twitter.com
+https://www.twitter.com
+https://facebook.com
+https://www.facebook.com
+https://instagram.com
+https://www.instagram.com
+
+<!-- Sites that block automated requests -->
+https://oracle.com
+https://www.oracle.com
+https://linode.com
+https://www.linode.com
+https://rubrik.com
+https://www.rubrik.com
+https://sap.com
+https://www.sap.com
+https://hashicorp.com
+https://www.hashicorp.com
+https://cloud.hashicorp.com/products/terraform
+
+<!-- Localhost and loopback -->
+http://localhost
+https://localhost
+http://127.0.0.1
+https://127.0.0.1
+http://0.0.0.0
+https://0.0.0.0
+
+<!-- Example domains and placeholders -->
+https://example.com
+https://example.org
+https://your-domain.com
+https://yourdomain.com
+https://yourusername.github.io
+https://awesome-cloud.com
+
+<!-- # Root-relative links handled by MkDocs -->
+/
+/id
+
+<!-- # Missing translation files -->
+docs/id/.*\.md

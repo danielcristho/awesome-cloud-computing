@@ -20,7 +20,6 @@ jobs:
         with:
           fail: false
           args: |
-            --config .lychee.toml
             --verbose
             --no-progress
             'README.md'
