@@ -11,10 +11,7 @@ max_retries = 2
 timeout = 15
 
 # Accept invalid SSL certificates
-accept = ["200", "204", "301", "302", "307", "308", "403", "429"]
-
-# Exclude mail addresses
-exclude_mail = true
+accept = ["200", "204", "301", "302", "307", "308"]
 
 # Check links in code blocks
 include_verbatim = false
@@ -29,13 +26,12 @@ exclude_link_local = true
 exclude_loopback = true
 
 # Skip missing files (useful for incomplete translations)
-skip_missing = true
+# skip_missing = true
 
 # User agent string
 user_agent = "Mozilla/5.0 (compatible; AwesomeCloudComputing/1.0; +https://github.com/danielcristho/awesome-cloud-computing)"
 
 # Headers to send with requests
-[headers]
-# Some sites require these headers
-"Accept" = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-"Accept-Language" = "en-US,en;q=0.5"
+[header]
+Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+Accept-Language = "en-US,en;q=0.5"
