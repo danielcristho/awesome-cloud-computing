@@ -1,186 +1,163 @@
+# Reference: https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml
+
+# Project information
 site_name: Awesome Cloud Computing
 site_url: https://awesome-clouds.com
 site_author: Daniel Cristho
+
+# Repository
 repo_name: danielcristho/awesome-cloud-computing
 repo_url: https://github.com/danielcristho/awesome-cloud-computing
 edit_uri: edit/main/docs/
+
+# Configuration
 theme:
   name: material
   language: en
   logo: assets/awesome-logo.svg
   features:
-  - navigation.tabs
-  - navigation.sections
-  - navigation.expand
-  - navigation.top
-  - search.highlight
-  - search.share
-  - search.suggest
-  - content.code.copy
-  - content.action.edit
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
   palette:
-  - media: '(prefers-color-scheme: light)'
-    scheme: default
-    primary: teal
-    accent: teal
-    toggle:
-      icon: material/brightness-7
-      name: Switch to dark mode
-  - media: '(prefers-color-scheme: dark)'
-    scheme: slate
-    primary: teal
-    accent: teal
-    toggle:
-      icon: material/brightness-4
-      name: Switch to light mode
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
+
+# Plugins
 plugins:
-- search:
-    lang:
-    - en
-    - id
-    - es
-- i18n:
-    docs_structure: folder
-    fallback_to_default: true
-    reconfigure_material: true
-    reconfigure_search: true
-    languages:
-    - locale: en
-      name: English
-      build: true
-      nav:
-      - Home: index.md
-      - Learning Resources:
-        - Overview: learning/index.md
-        - Basic Concepts: learning/basic-concepts.md
-        - Books: learning/books.md
-        - Tutorials: learning/tutorials.md
-        - Certifications: learning/certifications.md
-      - Platforms: platforms.md
-      - Tools & Software:
-        - Overview: tools/index.md
-        - Infrastructure as Code: tools/infrastructure-as-code.md
-        - Multi-cloud Management: tools/multi-cloud-management.md
-        - Containerization: tools/containerization.md
-        - Serverless Frameworks: tools/serverless-frameworks.md
-        - Cloud Migration: tools/cloud-migration.md
-        - Disaster Recovery: tools/disaster-recovery.md
-        - FinOps & Cost Management: tools/finops-cost-management.md
-        - Edge Computing: tools/edge-computing.md
-        - Monitoring: tools/monitoring.md
-        - Logging: tools/logging.md
-      - Best Practices:
-        - Overview: best-practices/index.md
-        - Cost Optimization: best-practices/cost-optimization.md
-        - Scalability & Performance: best-practices/scalability-performance.md
-      - Security:
-        - Overview: security/index.md
-        - Identity & Access Management: security/iam.md
-        - Threat Detection: security/threat-detection.md
-        - Secret Management: security/secret-management.md
-        - Compliance & Governance: security/compliance-governance.md
-      - Community: community/index.md
-      - Emerging Trends: trends/index.md
-      - Contributing: contributing.md
-      default: true
-    - locale: id
-      name: Bahasa Indonesia
-      build: true
-      nav:
-      - Beranda: index.md
-      - Sumber Belajar:
-        - Ringkasan: learning/index.md
-        - Konsep Dasar: learning/basic-concepts.md
-        - Buku: learning/books.md
-        - Tutorial: learning/tutorials.md
-        - Sertifikasi: learning/certifications.md
-      - Platform: platforms.md
-      - Alat & Perangkat Lunak:
-        - Ringkasan: tools/index.md
-        - Infrastructure as Code: tools/infrastructure-as-code.md
-        - Manajemen Multi-cloud: tools/multi-cloud-management.md
-        - Kontainerisasi: tools/containerization.md
-        - Framework Serverless: tools/serverless-frameworks.md
-        - Migrasi Cloud: tools/cloud-migration.md
-        - Pemulihan Bencana: tools/disaster-recovery.md
-        - FinOps & Manajemen Biaya: tools/finops-cost-management.md
-        - Edge Computing: tools/edge-computing.md
-        - Monitoring: tools/monitoring.md
-        - Logging: tools/logging.md
-      - Praktik Terbaik:
-        - Ringkasan: best-practices/index.md
-        - Optimasi Biaya: best-practices/cost-optimization.md
-        - Skalabilitas & Performa: best-practices/scalability-performance.md
-      - Keamanan:
-        - Ringkasan: security/index.md
-        - Manajemen Identitas & Akses: security/iam.md
-        - Deteksi Ancaman: security/threat-detection.md
-        - Manajemen Secret: security/secret-management.md
-        - Kepatuhan & Tata Kelola: security/compliance-governance.md
-      - Komunitas: community/index.md
-      - Tren Terkini: trends/index.md
-      - Berkontribusi: contributing.md
-    - locale: es
-      name: Español
-      build: true
-      nav:
-      - Inicio: index.md
-      - Recursos de Aprendizaje:
-        - Visión General: learning/index.md
-        - Conceptos Básicos: learning/basic-concepts.md
-        - Libros: learning/books.md
-        - Tutoriales: learning/tutorials.md
-        - Certificaciones: learning/certifications.md
-      - Plataformas: platforms.md
-      - Herramientas y Software:
-        - Visión General: tools/index.md
-        - Infraestructura como Código: tools/infrastructure-as-code.md
-        - Gestión Multinube: tools/multi-cloud-management.md
-        - Contenerización: tools/containerization.md
-        - Frameworks Serverless: tools/serverless-frameworks.md
-        - Migración a la Nube: tools/cloud-migration.md
-        - Recuperación ante Desastres: tools/disaster-recovery.md
-        - FinOps y Gestión de Costes: tools/finops-cost-management.md
-        - Computación en el Borde: tools/edge-computing.md
-        - Monitorización: tools/monitoring.md
-        - Registro de Logs: tools/logging.md
-      - Mejores Prácticas:
-        - Visión General: best-practices/index.md
-        - Optimización de Costes: best-practices/cost-optimization.md
-        - Escalabilidad y Rendimiento: best-practices/scalability-performance.md
-      - Seguridad:
-        - Visión General: security/index.md
-        - Gestión de Identidad y Accesos: security/iam.md
-        - Detección de Amenazas: security/threat-detection.md
-        - Gestión de Secretos: security/secret-management.md
-        - Cumplimiento y Gobernanza: security/compliance-governance.md
-      - Comunidad: community/index.md
-      - Tendencias Emergentes: trends/index.md
-      - Contribuir: contributing.md
-- minify:
-    minify_html: true
+  - search:
+      lang:
+        - en
+        - id
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+          nav:
+            - Home: index.md
+            - Learning Resources:
+                - Overview: learning/index.md
+                - Basic Concepts: learning/basic-concepts.md
+                - Books: learning/books.md
+                - Tutorials: learning/tutorials.md
+                - Certifications: learning/certifications.md
+            - Platforms: platforms.md
+            - Tools & Software:
+                - Overview: tools/index.md
+                - Infrastructure as Code: tools/infrastructure-as-code.md
+                - Multi-cloud Management: tools/multi-cloud-management.md
+                - Containerization: tools/containerization.md
+                - Serverless Frameworks: tools/serverless-frameworks.md
+                - Cloud Migration: tools/cloud-migration.md
+                - Disaster Recovery: tools/disaster-recovery.md
+                - FinOps & Cost Management: tools/finops-cost-management.md
+                - Edge Computing: tools/edge-computing.md
+                - Monitoring: tools/monitoring.md
+                - Logging: tools/logging.md
+            - Best Practices:
+                - Overview: best-practices/index.md
+                - Cost Optimization: best-practices/cost-optimization.md
+                - Scalability & Performance: best-practices/scalability-performance.md
+            - Security:
+                - Overview: security/index.md
+                - Identity & Access Management: security/iam.md
+                - Threat Detection: security/threat-detection.md
+                - Secret Management: security/secret-management.md
+                - Compliance & Governance: security/compliance-governance.md
+            - Community: community/index.md
+            - Emerging Trends: trends/index.md
+            - Contributing: contributing.md
+        - locale: id
+          name: Bahasa Indonesia
+          build: true
+          nav:
+            - Beranda: index.md
+            - Sumber Belajar:
+                - Ringkasan: learning/index.md
+                - Konsep Dasar: learning/basic-concepts.md
+                - Buku: learning/books.md
+                - Tutorial: learning/tutorials.md
+                - Sertifikasi: learning/certifications.md
+            - Platform: platforms.md
+            - Alat & Perangkat Lunak:
+                - Ringkasan: tools/index.md
+                - Infrastructure as Code: tools/infrastructure-as-code.md
+                - Manajemen Multi-cloud: tools/multi-cloud-management.md
+                - Kontainerisasi: tools/containerization.md
+                - Framework Serverless: tools/serverless-frameworks.md
+                - Migrasi Cloud: tools/cloud-migration.md
+                - Pemulihan Bencana: tools/disaster-recovery.md
+                - FinOps & Manajemen Biaya: tools/finops-cost-management.md
+                - Edge Computing: tools/edge-computing.md
+                - Monitoring: tools/monitoring.md
+                - Logging: tools/logging.md
+            - Praktik Terbaik:
+                - Ringkasan: best-practices/index.md
+                - Optimasi Biaya: best-practices/cost-optimization.md
+                - Skalabilitas & Performa: best-practices/scalability-performance.md
+            - Keamanan:
+                - Ringkasan: security/index.md
+                - Manajemen Identitas & Akses: security/iam.md
+                - Deteksi Ancaman: security/threat-detection.md
+                - Manajemen Secret: security/secret-management.md
+                - Kepatuhan & Tata Kelola: security/compliance-governance.md
+            - Komunitas: community/index.md
+            - Tren Terkini: trends/index.md
+            - Berkontribusi: contributing.md
+  - minify:
+      minify_html: true
+
+# Extensions
 markdown_extensions:
-- admonition
-- pymdownx.details
-- pymdownx.superfences
-- pymdownx.tabbed:
-    alternate_style: true
-- pymdownx.highlight:
-    anchor_linenums: true
-- pymdownx.inlinehilite
-- pymdownx.snippets
-- pymdownx.emoji:
-    emoji_generator: '!!python/name:material.extensions.emoji.to_svg'
-    emoji_index: '!!python/name:material.extensions.emoji.twemoji'
-- tables
-- attr_list
-- md_in_html
-- toc:
-    permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+# Copyright
 copyright: Copyright &copy; 2024-Present - Licensed under MIT License
