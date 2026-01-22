@@ -1,4 +1,4 @@
-name: Check
+name: Contents Check
 on:
   push:
     branches: ["main"]
