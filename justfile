@@ -8,17 +8,17 @@ default:
 # Development server
 dev:
     @echo "Starting MkDocs development server..."
-    @uv run mkdocs serve --dev-addr=127.0.0.1:8000
+    @uv run mkdocs serve
 
 # Sync language configurations
 sync-langs:
     @echo "Syncing language configurations..."
-    @uv run python scripts/sync-languages.py
+    @uv run python scripts/sync_languages.py
 
 # Create new language structure
 create-lang locale:
     @echo "Creating language structure for {{locale}}..."
-    @uv run python scripts/create-language.py {{locale}}
+    @uv run python scripts/create_language.py {{locale}}
 
 # Clean build artifacts
 clean:

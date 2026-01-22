@@ -139,7 +139,7 @@ def create_language_structure(locale):
       # ... add more translations
 """
     )
-    print("3. Run: just sync-langs")
+    print("3. Run: just sync-langs or python scripts/sync-languages.py")
     print(f"4. Start translating pages in docs/{locale}/")
     print(
         "\nTip: You can translate pages gradually. Untranslated pages will fallback to English."
