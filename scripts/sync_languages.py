@@ -6,6 +6,10 @@ Sync language configurations from docs/languages.yml to mkdocs.yml
 from pathlib import Path
 import sys
 import yaml
+from rich.panel import Panel
+from rich.console import Console
+
+console = Console()
 
 # Const
 LANG_FILE = Path("docs/languages.yml")
@@ -99,7 +103,13 @@ def find_plugin(plugins, name):
 def sync_languages():
     langs_cfg = load_yaml(LANG_FILE).get("languages", [])
     if not langs_cfg:
-        print("Error: no languages defined")
+        console.print(
+            Panel.fit(
+                "No languages defined in docs/languages.yml",
+                title="[red]Error[/red]",
+                border_style="red",
+            )
+        )
         sys.exit(1)
 
     mkdocs = load_yaml(MKDOCS_FILE)
@@ -138,14 +148,14 @@ def sync_languages():
 
     save_yaml(MKDOCS_FILE, mkdocs)
 
-    print("mkdocs.yml successfully synced")
-    # print("Languages:", ", ".join(l["name"] for l in langs_cfg))
-    print("Languages:", ", ".join(lang["name"] for lang in langs_cfg))
+    console.print("[green]mkdocs.yml successfully synced [green]")
+    console.print(f"[cyan]Languages: [{', '.join(lang['name'] for lang in langs_cfg)}]")
 
     for lang in langs_cfg:
         folder = Path("docs") / lang["locale"]
         if not folder.exists():
             print(f"Missing folder: {folder}/")
+            console.print("[yellow]Missing folder:[/yellow] docs/{locale}/")
 
 
 class MkDocsLoader(yaml.FullLoader):
@@ -164,9 +174,17 @@ MkDocsLoader.add_multi_constructor(
 
 
 def main():
-    print("Syncing languages...")
+    # print panel
+    console.print(
+        Panel.fit(
+            "Syncing languages...",
+            title="Syncing",
+            border_style="cyan",
+        )
+    )
     sync_languages()
-    print("Done. Run: mkdocs serve")
+    # print("Done. Run: mkdocs serve")
+    console.print("[green]Done. Run: $ mkdocs serve[/green]")
 
 
 if __name__ == "__main__":
